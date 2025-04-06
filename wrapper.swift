@@ -10,11 +10,10 @@ struct EmailValidator {
     
     var wrappedValue: String{
         get{
-            print("calling getter")
             return isValidEmail() ? value : ""
         }set{
-            print("calling setter")
             value = newValue
+            print("calling setter")
         }
     }
     
